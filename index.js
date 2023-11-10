@@ -20,14 +20,20 @@ collisions.forEach((row, r) => {
     })
 });
 
-// creates an image object to work with
 const map = new Image();
 map.src = './docs/assets/Tiled/Pellet Town.png';
-
 const background = new Sprite({
     position: {x: offset.x, y: offset.y},
     image: map
 });
+
+const foregroundImg = new Image();
+foregroundImg.src = './docs/assets/Images/foreground.png';
+const foreground = new Sprite({
+    position: {x: offset.x, y: offset.y},
+    image: foregroundImg
+});
+
 
 // the player sprite
 const playerImage = new Image();
@@ -56,7 +62,7 @@ const keys = {
     }
 }
 
-const moveables = [background, ...boundries];
+const moveables = [foreground, background, ...boundries];
 
 function rectangleCollision({rec1, rec2}) {
     return (
@@ -75,6 +81,7 @@ function gameTick() {
         b.draw();
     });
     player.draw();
+    foreground.draw();
 
     let moving = true;
 

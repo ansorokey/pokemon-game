@@ -11,6 +11,7 @@ class Boundry {
     }
 
     draw() {
+        // canvas.fillStyle = 'rgba(255, 0, 0, 0.0)';
         canvas.fillStyle = 'red';
         canvas.fillRect(this.position.x, this.position.y, this.width, this.height)
     }
