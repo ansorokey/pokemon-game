@@ -5,7 +5,10 @@ This project was created by following [Pokémon JavaScript Game Tutorial with HT
 ](https://youtu.be/yP5DKzriqXA?si=Z73E1YZLN0C3zuJt)
 
 ## Key Features and Technologies
+- Tiled Map Editor
 
 ## How To Use
 
 ## Future Features
+
+## Things I Learned
