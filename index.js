@@ -70,7 +70,7 @@ function rectangleCollision({rec1, rec2}) {
         rec1.position.x <= rec2.position.x + rec2.width &&
         rec1.position.y <= rec2.position.y + rec2.height &&
         rec1.position.y + rec1.height >= rec2.position.y
-    )
+      )
 }
 
 // the loop that draws and updates the canvas
